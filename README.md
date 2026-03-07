@@ -4,6 +4,20 @@
 
 A collection of free Japanese language learning worksheets and writing practice workbooks covering Hiragana, Katakana, Kanji, and essential vocabulary topics. Each worksheet set includes large character references, romaji pronunciation guides, and grid-based practice sheets for repeated handwriting practice.
 
+### Worksheets
+
+1. [Hiragana Writing Practice](hiragana/01-write-hiragana.pdf)
+2. [Hiragana Worksheet Set](hiragana/japanese-worksheet-hiragana-mensura-media-pdfa.pdf)
+3. [Katakana Writing Practice](katakana/02-write-katakana.pdf)
+4. [Katakana Worksheet Set](katakana/japanese-worksheet-katakana-mensura-media-pdfa.pdf)
+5. [Kanji N5 Writing Practice](kanji/03-write-kanji.pdf)
+6. [Kanji &mdash; JLPT N5 Worksheet Set](kanji/japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf)
+7. [Kanji &mdash; Joyo Complete Worksheet Set](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf)
+8. [Days of the Week](vocabulary/japanese-worksheet-days-mensura-media-pdfa.pdf)
+9. [Months](vocabulary/japanese-worksheet-months-mensura-media-pdfa.pdf)
+10. [Numbers](vocabulary/japanese-worksheet-numbers-mensura-media-pdfa.pdf)
+11. [Time](vocabulary/japanese-worksheet-time-mensura-media-pdfa.pdf)
+
 ---
 
 ## Hiragana &mdash; ひらがな
