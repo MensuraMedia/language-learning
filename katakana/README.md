@@ -1,6 +1,6 @@
 # Katakana &mdash; カタカナ
 
-![Katakana Cover](../images/cover_katakana.png)
+<p align="center"><img src="../images/cover_katakana.png" width="25%"></p>
 
 The Japanese phonetic script used for foreign loanwords, technical terms, and emphasis. This set covers all 46 core katakana characters plus dakuten variations and yoon combinations &mdash; **104 characters in total**.
 

@@ -6,7 +6,7 @@ Chinese-origin characters used in Japanese writing. Two worksheet sets cover beg
 
 ## JLPT N5 Kanji
 
-![Kanji N5 Cover](../images/cover_kanji_n5.png)
+<p align="center"><img src="../images/cover_kanji_n5.png" width="25%"></p>
 
 The essential kanji required for JLPT N5, the entry level of the Japanese Language Proficiency Test. Characters cover numbers, time, directions, people, and nature. Each sheet pairs a kanji with on-yomi and kun-yomi readings, stroke order, and a full practice grid.
 
@@ -21,7 +21,7 @@ The essential kanji required for JLPT N5, the entry level of the Japanese Langua
 
 ## Joyo Kanji &mdash; Complete (常用漢字)
 
-![Kanji Joyo Cover](../images/cover_kanji_joyo.png)
+<p align="center"><img src="../images/cover_kanji_joyo.png" width="25%"></p>
 
 The full Joyo kanji list &mdash; all **1,521 characters** from the official Japanese Ministry of Education curriculum. Organised by grade level, each sheet includes a large character reference, readings, and a practice grid.
 

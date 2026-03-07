@@ -1,6 +1,6 @@
 # Hiragana &mdash; ひらがな
 
-![Hiragana Cover](../images/cover_hiragana.png)
+<p align="center"><img src="../images/cover_hiragana.png" width="25%"></p>
 
 The foundational Japanese phonetic script used for native Japanese words and grammatical elements. This set covers all 46 core hiragana characters plus dakuten variations and yoon combinations &mdash; **104 characters in total**.
 

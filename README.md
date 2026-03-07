@@ -12,7 +12,7 @@ The foundational Japanese phonetic script. This set covers all 46 core hiragana 
 
 | Cover | Example Pages |
 |:---:|:---:|
-| ![Hiragana Cover](images/cover_hiragana.png) | ![Hiragana Example](images/example_hiragana.png) |
+| <img src="images/cover_hiragana.png" width="25%"> | ![Hiragana Example](images/example_hiragana.png) |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`01-write-hiragana.pdf`](hiragana/01-write-hiragana.pdf) &mdash; Simple grid practice (2 characters per page, blue headers)
@@ -28,7 +28,7 @@ The phonetic script used for foreign loanwords and modern Japanese text. Same st
 
 | Cover | Example Pages |
 |:---:|:---:|
-| ![Katakana Cover](images/cover_katakana.png) | ![Katakana Example](images/example_katakana.png) |
+| <img src="images/cover_katakana.png" width="25%"> | ![Katakana Example](images/example_katakana.png) |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`02-write-katakana.pdf`](katakana/02-write-katakana.pdf) &mdash; Simple grid practice (2 characters per page, tan headers)
@@ -48,7 +48,7 @@ The essential kanji required for the entry level of the Japanese Language Profic
 
 | Cover | Example Pages |
 |:---:|:---:|
-| ![Kanji N5 Cover](images/cover_kanji_n5.png) | ![Kanji N5 Example](images/example_kanji_n5.png) |
+| <img src="images/cover_kanji_n5.png" width="25%"> | ![Kanji N5 Example](images/example_kanji_n5.png) |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`03-write-kanji.pdf`](kanji/03-write-kanji.pdf) &mdash; Simple grid practice (2 kanji per page, green headers)
@@ -60,7 +60,7 @@ The full Joyo kanji list &mdash; all **1,521 characters** across Grade 1 through
 
 | Cover | Example Pages |
 |:---:|:---:|
-| ![Kanji Joyo Cover](images/cover_kanji_joyo.png) | ![Kanji Joyo Example](images/example_kanji_joyo.png) |
+| <img src="images/cover_kanji_joyo.png" width="25%"> | ![Kanji Joyo Example](images/example_kanji_joyo.png) |
 
 **Contents:**
 - **Joyo Complete Worksheet Set** &mdash; [`japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf`](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf) &mdash; Cover page, multi-page table of contents, and 548+ pages of practice
@@ -73,9 +73,7 @@ Topic-based worksheets that combine a **reference & examples page** with kanji w
 
 ### Days of the Week &mdash; 曜日
 
-| |
-|:---:|
-| ![Days Cover](images/cover_days.png) |
+<p align="center"><img src="images/cover_days.png" width="25%"></p>
 
 All 7 days with element breakdowns, relative day expressions, school schedule vocabulary, and time-of-week combinations.
 
@@ -83,9 +81,7 @@ All 7 days with element breakdowns, relative day expressions, school schedule vo
 
 ### Months &mdash; 月
 
-| |
-|:---:|
-| ![Months Cover](images/cover_months.png) |
+<p align="center"><img src="images/cover_months.png" width="25%"></p>
 
 All 12 months with seasons, school calendar terms, festivals & events, date expressions, and counter words.
 
@@ -93,9 +89,7 @@ All 12 months with seasons, school calendar terms, festivals & events, date expr
 
 ### Numbers &mdash; 数字
 
-| |
-|:---:|
-| ![Numbers Cover](images/cover_numbers.png) |
+<p align="center"><img src="images/cover_numbers.png" width="25%"></p>
 
 Kanji numbers from 0 to 1,000,000,000,000 with teens, tens, hundreds, thousands, ten-thousands, and 100-millions. Includes number pattern breakdowns.
 
@@ -103,9 +97,7 @@ Kanji numbers from 0 to 1,000,000,000,000 with teens, tens, hundreds, thousands,
 
 ### Time &mdash; 時間
 
-| |
-|:---:|
-| ![Time Cover](images/cover_time.png) |
+<p align="center"><img src="images/cover_time.png" width="25%"></p>
 
 Clock reading with hours, minutes, seconds, AM/PM, durations, time-of-day expressions, greetings by time, and common time vocabulary.
 
