@@ -136,9 +136,9 @@ The most advanced JLPT level, covering rare and specialized kanji found in acade
 
 The full Joyo kanji list &mdash; all **1,521 characters** across Grade 1 through Grade 6 and Secondary school levels. Organised by grade level, each sheet includes large character reference, readings, and a practice grid. A complete reference for dedicated learners.
 
-| Cover | Example Pages |
-|:---:|:---:|
-| <img src="images/cover_kanji_joyo.png" width="25%"> | ![Kanji Joyo Example](images/example_kanji_joyo.png) |
+| Example Pages |
+|:---:|
+| ![Kanji Joyo Example](images/example_kanji_joyo.png) |
 
 **Contents:**
 - **Joyo Complete Worksheet Set** &mdash; [`japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf`](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf) &mdash; Cover page, multi-page table of contents, and 548+ pages of practice
