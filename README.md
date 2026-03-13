@@ -17,6 +17,18 @@ A collection of free Japanese language learning worksheets and writing practice 
 9. [Months](vocabulary/japanese-worksheet-months-mensura-media-pdfa.pdf)
 10. [Numbers](vocabulary/japanese-worksheet-numbers-mensura-media-pdfa.pdf)
 11. [Time](vocabulary/japanese-worksheet-time-mensura-media-pdfa.pdf)
+12. [Hiragana Reference Chart](hiragana/reference_chart_hiragana.pdf)
+13. [Katakana Reference Chart](katakana/reference_chart_katakana.pdf)
+14. [Kanji N5 Reference Chart](kanji/reference_chart_kanji_n5.pdf)
+15. [Kanji N4 Reference Chart](kanji/reference_chart_kanji_n4.pdf)
+16. [Kanji N3 Reference Chart](kanji/reference_chart_kanji_n3.pdf)
+17. [Kanji N2 Reference Chart](kanji/reference_chart_kanji_n2.pdf)
+18. [Kanji N1 Reference Chart](kanji/reference_chart_kanji_n1.pdf)
+19. [Hiragana Flash Cards](hiragana/flashcard_hiragana.pdf)
+20. [Katakana Flash Cards](katakana/flashcard_katakana.pdf)
+21. [Hiragana Wall Prints](hiragana/wall_prints_hiragana.pdf)
+22. [Katakana Wall Prints](katakana/wall_prints_katakana.pdf)
+23. [Top 200 Kanji Wall Chart](kanji/wall_prints_kanji_wall_200.pdf)
 
 ---
 
@@ -31,6 +43,9 @@ The foundational Japanese phonetic script. This set covers all 46 core hiragana 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`01-write-hiragana.pdf`](hiragana/01-write-hiragana.pdf) &mdash; Simple grid practice (2 characters per page, blue headers)
 - **Full Worksheet Set** &mdash; [`japanese-worksheet-hiragana-mensura-media-pdfa.pdf`](hiragana/japanese-worksheet-hiragana-mensura-media-pdfa.pdf) &mdash; Cover page, table of contents, and 52 pages of writing practice
+- **Reference Chart** &mdash; [`reference_chart_hiragana.pdf`](hiragana/reference_chart_hiragana.pdf) &mdash; 2-page quick-reference with all gojuon, dakuon, han-dakuon, and yoon characters, common words by row, sample sentences, and a particles cheat sheet
+- **Flash Cards** &mdash; [`flashcard_hiragana.pdf`](hiragana/flashcard_hiragana.pdf) &mdash; 23-page printable double-sided flash cards (character on front, romaji with pronunciation guide on back). Print, cut, and learn
+- **Wall Prints** &mdash; [`wall_prints_hiragana.pdf`](hiragana/wall_prints_hiragana.pdf) &mdash; 10-page large-format wall chart with all characters displayed in bold, organized by row (gojuon, dakuon, yoon)
 
 > Ideal for beginners starting their Japanese writing journey.
 
@@ -47,6 +62,9 @@ The phonetic script used for foreign loanwords and modern Japanese text. Same st
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`02-write-katakana.pdf`](katakana/02-write-katakana.pdf) &mdash; Simple grid practice (2 characters per page, tan headers)
 - **Full Worksheet Set** &mdash; [`japanese-worksheet-katakana-mensura-media-pdfa.pdf`](katakana/japanese-worksheet-katakana-mensura-media-pdfa.pdf) &mdash; Cover page, table of contents, and 52 pages of writing practice
+- **Reference Chart** &mdash; [`reference_chart_katakana.pdf`](katakana/reference_chart_katakana.pdf) &mdash; 2-page quick-reference with all gojuon, dakuon, han-dakuon, and yoon characters, common loanwords by row, sample sentences, and a particles cheat sheet
+- **Flash Cards** &mdash; [`flashcard_katakana.pdf`](katakana/flashcard_katakana.pdf) &mdash; 23-page printable double-sided flash cards (character on front, romaji with pronunciation guide on back). Print, cut, and learn
+- **Wall Prints** &mdash; [`wall_prints_katakana.pdf`](katakana/wall_prints_katakana.pdf) &mdash; 10-page large-format wall chart with all characters displayed in bold, organized by row (gojuon, dakuon, yoon)
 
 > Essential for reading foreign loanwords and modern Japanese text.
 
@@ -54,7 +72,7 @@ The phonetic script used for foreign loanwords and modern Japanese text. Same st
 
 ## Kanji &mdash; 漢字
 
-Chinese-origin characters used in Japanese writing. Two worksheet sets are available covering beginner through advanced levels.
+Chinese-origin characters used in Japanese writing. Worksheet sets, reference charts, and wall prints are available covering all JLPT levels from beginner (N5) through advanced (N1), plus the complete Joyo set.
 
 ### JLPT N5 Kanji
 
@@ -67,6 +85,35 @@ The essential kanji required for the entry level of the Japanese Language Profic
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`03-write-kanji.pdf`](kanji/03-write-kanji.pdf) &mdash; Simple grid practice (2 kanji per page, green headers)
 - **JLPT N5 Worksheet Set** &mdash; [`japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf`](kanji/japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf) &mdash; Cover page, table of contents, and 31 pages covering all N5 kanji
+- **N5 Reference Chart** &mdash; [`reference_chart_kanji_n5.pdf`](kanji/reference_chart_kanji_n5.pdf) &mdash; 107 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
+
+### JLPT N4 Kanji
+
+The next level of JLPT kanji, building on N5 with characters for everyday actions, descriptions, and concepts.
+
+**Contents:**
+- **N4 Reference Chart** &mdash; [`reference_chart_kanji_n4.pdf`](kanji/reference_chart_kanji_n4.pdf) &mdash; 174 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
+
+### JLPT N3 Kanji
+
+Intermediate-level kanji covering a broad range of topics including abstract concepts, emotions, and formal vocabulary.
+
+**Contents:**
+- **N3 Reference Chart** &mdash; [`reference_chart_kanji_n3.pdf`](kanji/reference_chart_kanji_n3.pdf) &mdash; 394 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
+
+### JLPT N2 Kanji
+
+Upper-intermediate kanji used in news, literature, and professional contexts.
+
+**Contents:**
+- **N2 Reference Chart** &mdash; [`reference_chart_kanji_n2.pdf`](kanji/reference_chart_kanji_n2.pdf) &mdash; 248 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
+
+### JLPT N1 Kanji
+
+The most advanced JLPT level, covering rare and specialized kanji found in academic, literary, and formal writing.
+
+**Contents:**
+- **N1 Reference Chart** &mdash; [`reference_chart_kanji_n1.pdf`](kanji/reference_chart_kanji_n1.pdf) &mdash; 382 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
 
 ### Joyo Kanji &mdash; Complete
 
@@ -78,6 +125,13 @@ The full Joyo kanji list &mdash; all **1,521 characters** across Grade 1 through
 
 **Contents:**
 - **Joyo Complete Worksheet Set** &mdash; [`japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf`](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf) &mdash; Cover page, multi-page table of contents, and 548+ pages of practice
+
+### Top 200 Kanji Wall Chart
+
+A 14-page large-format wall chart featuring the 200 most essential kanji, organized by category: Numbers & Counting, People & Family, Nature & Weather, Time & Calendar, Actions, Descriptions, Places, and more. Each card shows the kanji in bold with romaji reading and English meaning.
+
+**Contents:**
+- **Wall Chart** &mdash; [`wall_prints_kanji_wall_200.pdf`](kanji/wall_prints_kanji_wall_200.pdf) &mdash; 14 pages of large, printable kanji cards grouped by topic
 
 ---
 
@@ -125,16 +179,28 @@ Clock reading with hours, minutes, seconds, AM/PM, durations, time-of-day expres
 language-learning/
 ├── README.md
 ├── images/                     # Cover and example images
-├── hiragana/                   # Hiragana writing practice
+├── hiragana/                   # Hiragana writing practice & study tools
 │   ├── 01-write-hiragana.pdf
-│   └── japanese-worksheet-hiragana-mensura-media-pdfa.pdf
-├── katakana/                   # Katakana writing practice
+│   ├── japanese-worksheet-hiragana-mensura-media-pdfa.pdf
+│   ├── reference_chart_hiragana.pdf
+│   ├── flashcard_hiragana.pdf
+│   └── wall_prints_hiragana.pdf
+├── katakana/                   # Katakana writing practice & study tools
 │   ├── 02-write-katakana.pdf
-│   └── japanese-worksheet-katakana-mensura-media-pdfa.pdf
-├── kanji/                      # Kanji writing practice
+│   ├── japanese-worksheet-katakana-mensura-media-pdfa.pdf
+│   ├── reference_chart_katakana.pdf
+│   ├── flashcard_katakana.pdf
+│   └── wall_prints_katakana.pdf
+├── kanji/                      # Kanji writing practice & reference charts
 │   ├── 03-write-kanji.pdf
 │   ├── japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf
-│   └── japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf
+│   ├── japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf
+│   ├── reference_chart_kanji_n5.pdf
+│   ├── reference_chart_kanji_n4.pdf
+│   ├── reference_chart_kanji_n3.pdf
+│   ├── reference_chart_kanji_n2.pdf
+│   ├── reference_chart_kanji_n1.pdf
+│   └── wall_prints_kanji_wall_200.pdf
 └── vocabulary/                 # Topic-based vocabulary worksheets
     ├── japanese-worksheet-days-mensura-media-pdfa.pdf
     ├── japanese-worksheet-months-mensura-media-pdfa.pdf
