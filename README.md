@@ -11,12 +11,15 @@ A collection of free Japanese language learning worksheets and writing practice 
 3. [Katakana Writing Practice](katakana/02-write-katakana.pdf)
 4. [Katakana Worksheet Set](katakana/japanese-worksheet-katakana-mensura-media-pdfa.pdf)
 5. [Kanji N5 Writing Practice](kanji/03-write-kanji.pdf)
-6. [Kanji - JLPT N5 Worksheet Set](kanji/japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf)
-7. [Kanji - Joyo Complete Worksheet Set](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf)
+6. [Kanji &mdash; JLPT N5 Worksheet Set](kanji/japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf)
+7. [Kanji &mdash; Joyo Complete Worksheet Set](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf)
 8. [Days of the Week](vocabulary/japanese-worksheet-days-mensura-media-pdfa.pdf)
 9. [Months](vocabulary/japanese-worksheet-months-mensura-media-pdfa.pdf)
 10. [Numbers](vocabulary/japanese-worksheet-numbers-mensura-media-pdfa.pdf)
 11. [Time](vocabulary/japanese-worksheet-time-mensura-media-pdfa.pdf)
+
+### Reference Charts
+
 12. [Hiragana Reference Chart](hiragana/reference_chart_hiragana.pdf)
 13. [Katakana Reference Chart](katakana/reference_chart_katakana.pdf)
 14. [Kanji N5 Reference Chart](kanji/reference_chart_kanji_n5.pdf)
@@ -24,8 +27,14 @@ A collection of free Japanese language learning worksheets and writing practice 
 16. [Kanji N3 Reference Chart](kanji/reference_chart_kanji_n3.pdf)
 17. [Kanji N2 Reference Chart](kanji/reference_chart_kanji_n2.pdf)
 18. [Kanji N1 Reference Chart](kanji/reference_chart_kanji_n1.pdf)
+
+### Flash Cards
+
 19. [Hiragana Flash Cards](hiragana/flashcard_hiragana.pdf)
 20. [Katakana Flash Cards](katakana/flashcard_katakana.pdf)
+
+### Wall Prints
+
 21. [Hiragana Wall Prints](hiragana/wall_prints_hiragana.pdf)
 22. [Katakana Wall Prints](katakana/wall_prints_katakana.pdf)
 23. [Top 200 Kanji Wall Chart](kanji/wall_prints_kanji_wall_200.pdf)
@@ -36,9 +45,9 @@ A collection of free Japanese language learning worksheets and writing practice 
 
 The foundational Japanese phonetic script. This set covers all 46 core hiragana characters plus dakuten variations and yoon combinations &mdash; **104 characters in total**. Each sheet provides a large character reference with romaji and practice grid cells for repeated writing.
 
-| Cover | Example Pages |
-|:---:|:---:|
-| <img src="images/cover_hiragana.png" width="25%"> | ![Hiragana Example](images/example_hiragana.png) |
+| Worksheet | Reference Chart | Flash Cards | Wall Prints |
+|:---:|:---:|:---:|:---:|
+| <img src="images/cover_hiragana.png" width="150"> | <img src="images/cover_ref_hiragana.png" width="150"> | <img src="images/cover_flashcard_hiragana.png" width="150"> | <img src="images/cover_wall_hiragana.png" width="150"> |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`01-write-hiragana.pdf`](hiragana/01-write-hiragana.pdf) &mdash; Simple grid practice (2 characters per page, blue headers)
@@ -55,9 +64,9 @@ The foundational Japanese phonetic script. This set covers all 46 core hiragana 
 
 The phonetic script used for foreign loanwords and modern Japanese text. Same structure as hiragana &mdash; **104 characters** covering basic, dakuten, and yoon combinations.
 
-| Cover | Example Pages |
-|:---:|:---:|
-| <img src="images/cover_katakana.png" width="25%"> | ![Katakana Example](images/example_katakana.png) |
+| Worksheet | Reference Chart | Flash Cards | Wall Prints |
+|:---:|:---:|:---:|:---:|
+| <img src="images/cover_katakana.png" width="150"> | <img src="images/cover_ref_katakana.png" width="150"> | <img src="images/cover_flashcard_katakana.png" width="150"> | <img src="images/cover_wall_katakana.png" width="150"> |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`02-write-katakana.pdf`](katakana/02-write-katakana.pdf) &mdash; Simple grid practice (2 characters per page, tan headers)
@@ -78,9 +87,9 @@ Chinese-origin characters used in Japanese writing. Worksheet sets, reference ch
 
 The essential kanji required for the entry level of the Japanese Language Proficiency Test. Characters include numbers, time, directions, people, and nature. Each sheet pairs a kanji with readings and a full practice grid.
 
-| Cover | Example Pages |
+| Worksheet | Reference Chart |
 |:---:|:---:|
-| <img src="images/cover_kanji_n5.png" width="25%"> | ![Kanji N5 Example](images/example_kanji_n5.png) |
+| <img src="images/cover_kanji_n5.png" width="150"> | <img src="images/cover_ref_kanji_n5.png" width="150"> |
 
 **Contents:**
 - **Writing Practice Workbook** &mdash; [`03-write-kanji.pdf`](kanji/03-write-kanji.pdf) &mdash; Simple grid practice (2 kanji per page, green headers)
@@ -91,12 +100,16 @@ The essential kanji required for the entry level of the Japanese Language Profic
 
 The next level of JLPT kanji, building on N5 with characters for everyday actions, descriptions, and concepts.
 
+<p align="center"><img src="images/cover_ref_kanji_n4.png" width="25%"></p>
+
 **Contents:**
 - **N4 Reference Chart** &mdash; [`reference_chart_kanji_n4.pdf`](kanji/reference_chart_kanji_n4.pdf) &mdash; 174 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
 
 ### JLPT N3 Kanji
 
 Intermediate-level kanji covering a broad range of topics including abstract concepts, emotions, and formal vocabulary.
+
+<p align="center"><img src="images/cover_ref_kanji_n3.png" width="25%"></p>
 
 **Contents:**
 - **N3 Reference Chart** &mdash; [`reference_chart_kanji_n3.pdf`](kanji/reference_chart_kanji_n3.pdf) &mdash; 394 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
@@ -105,12 +118,16 @@ Intermediate-level kanji covering a broad range of topics including abstract con
 
 Upper-intermediate kanji used in news, literature, and professional contexts.
 
+<p align="center"><img src="images/cover_ref_kanji_n2.png" width="25%"></p>
+
 **Contents:**
 - **N2 Reference Chart** &mdash; [`reference_chart_kanji_n2.pdf`](kanji/reference_chart_kanji_n2.pdf) &mdash; 248 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
 
 ### JLPT N1 Kanji
 
 The most advanced JLPT level, covering rare and specialized kanji found in academic, literary, and formal writing.
+
+<p align="center"><img src="images/cover_ref_kanji_n1.png" width="25%"></p>
 
 **Contents:**
 - **N1 Reference Chart** &mdash; [`reference_chart_kanji_n1.pdf`](kanji/reference_chart_kanji_n1.pdf) &mdash; 382 characters &mdash; cover page with alphabetical index listing each kanji, English meaning, and reading
@@ -129,6 +146,8 @@ The full Joyo kanji list &mdash; all **1,521 characters** across Grade 1 through
 ### Top 200 Kanji Wall Chart
 
 A 14-page large-format wall chart featuring the 200 most essential kanji, organized by category: Numbers & Counting, People & Family, Nature & Weather, Time & Calendar, Actions, Descriptions, Places, and more. Each card shows the kanji in bold with romaji reading and English meaning.
+
+<p align="center"><img src="images/cover_wall_kanji_200.png" width="25%"></p>
 
 **Contents:**
 - **Wall Chart** &mdash; [`wall_prints_kanji_wall_200.pdf`](kanji/wall_prints_kanji_wall_200.pdf) &mdash; 14 pages of large, printable kanji cards grouped by topic
