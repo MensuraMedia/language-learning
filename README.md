@@ -33,12 +33,15 @@ A collection of free Japanese language learning worksheets and writing practice 
 
 20. [Hiragana Flash Cards](hiragana/flashcard_hiragana.pdf)
 21. [Katakana Flash Cards](katakana/flashcard_katakana.pdf)
+22. [Top 200 Kanji Flash Cards](kanji/flashcard_kanji_200.pdf)
+23. [Top 500 Kanji Flash Cards](kanji/flashcard_kanji_500.pdf)
+24. [Complete Kanji Flash Cards](kanji/flashcard_kanji_all.pdf)
 
 ### Wall Prints
 
-22. [Hiragana Wall Prints](hiragana/wall_prints_hiragana.pdf)
-23. [Katakana Wall Prints](katakana/wall_prints_katakana.pdf)
-24. [Top 200 Kanji Wall Chart](kanji/wall_prints_kanji_wall_200.pdf)
+25. [Hiragana Wall Prints](hiragana/wall_prints_hiragana.pdf)
+26. [Katakana Wall Prints](katakana/wall_prints_katakana.pdf)
+27. [Top 200 Kanji Wall Chart](kanji/wall_prints_kanji_wall_200.pdf)
 
 ---
 
@@ -144,6 +147,19 @@ The full Joyo kanji list &mdash; all **1,521 characters** across Grade 1 through
 **Contents:**
 - **Joyo Complete Worksheet Set** &mdash; [`japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf`](kanji/japanese-worksheet-kanji-joyo-mensura-media-pdfa.pdf) &mdash; Cover page, multi-page table of contents, and 548+ pages of practice
 
+### Kanji Flash Cards
+
+Printable double-sided flash cards for kanji study. Each card shows the kanji character on the front and the English meaning with romaji reading on the back. Print, cut along the dashed lines, and learn. Available in three sizes to match your level.
+
+| Top 200 | Top 500 | Complete (1,372) |
+|:---:|:---:|:---:|
+| <img src="images/cover_flashcard_kanji_200.png" width="150"> | <img src="images/cover_flashcard_kanji_500.png" width="150"> | <img src="images/cover_flashcard_kanji_all.png" width="150"> |
+
+**Contents:**
+- **Top 200 Kanji Flash Cards** &mdash; [`flashcard_kanji_200.pdf`](kanji/flashcard_kanji_200.pdf) &mdash; 200 essential kanji, 41 pages
+- **Top 500 Kanji Flash Cards** &mdash; [`flashcard_kanji_500.pdf`](kanji/flashcard_kanji_500.pdf) &mdash; 500 common kanji, 101 pages
+- **Complete Kanji Flash Cards** &mdash; [`flashcard_kanji_all.pdf`](kanji/flashcard_kanji_all.pdf) &mdash; All 1,372 kanji, 277 pages
+
 ### Top 200 Kanji Wall Chart
 
 A 14-page large-format wall chart featuring the 200 most essential kanji, organized by category: Numbers & Counting, People & Family, Nature & Weather, Time & Calendar, Actions, Descriptions, Places, and more. Each card shows the kanji in bold with romaji reading and English meaning.
@@ -220,6 +236,9 @@ language-learning/
 │   ├── reference_chart_kanji_n3.pdf
 │   ├── reference_chart_kanji_n2.pdf
 │   ├── reference_chart_kanji_n1.pdf
+│   ├── flashcard_kanji_200.pdf
+│   ├── flashcard_kanji_500.pdf
+│   ├── flashcard_kanji_all.pdf
 │   └── wall_prints_kanji_wall_200.pdf
 └── vocabulary/                 # Topic-based vocabulary worksheets
     ├── japanese-worksheet-days-mensura-media-pdfa.pdf
