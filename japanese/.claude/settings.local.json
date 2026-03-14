@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /home/user/language-learning && git pull origin main 2>&1)",
+      "Bash(gh api:*)",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(cd:*)",
+      "Bash(git mv:*)",
+      "Bash(git:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
