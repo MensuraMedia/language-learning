@@ -14,7 +14,7 @@ Worksheets and study tools for learning Japanese writing systems: Hiragana, Kata
 
 ### [English &mdash; 英語](english/)
 
-英語を学ぶための教材。日本語話者向け。
+英語を学ぶための教材。日本語話者向け。アルファベット、フォニックス、サイトワード、基本語彙、文法、英検5級対策を含む21種類の教材。
 
 ---
 
