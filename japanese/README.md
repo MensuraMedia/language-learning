@@ -23,11 +23,20 @@ A collection of free Japanese language learning worksheets and writing practice 
 
 13. [Hiragana Reference Chart](jp_hiragana/reference_chart_hiragana.pdf)
 14. [Katakana Reference Chart](jp_katakana/reference_chart_katakana.pdf)
-15. [Kanji N5 Reference Chart](jp_kanji/reference_chart_kanji_n5.pdf)
-16. [Kanji N4 Reference Chart](jp_kanji/reference_chart_kanji_n4.pdf)
-17. [Kanji N3 Reference Chart](jp_kanji/reference_chart_kanji_n3.pdf)
-18. [Kanji N2 Reference Chart](jp_kanji/reference_chart_kanji_n2.pdf)
-19. [Kanji N1 Reference Chart](jp_kanji/reference_chart_kanji_n1.pdf)
+15. [Hiragana Simple Chart](jp_hiragana/simple_chart_hiragana.pdf)
+16. [Katakana Simple Chart](jp_katakana/simple_chart_katakana.pdf)
+17. [Kanji N5 Reference Chart](jp_kanji/reference_chart_kanji_n5.pdf)
+18. [Kanji N4 Reference Chart](jp_kanji/reference_chart_kanji_n4.pdf)
+19. [Kanji N3 Reference Chart](jp_kanji/reference_chart_kanji_n3.pdf)
+20. [Kanji N2 Reference Chart](jp_kanji/reference_chart_kanji_n2.pdf)
+21. [Kanji N1 Reference Chart](jp_kanji/reference_chart_kanji_n1.pdf)
+
+### Sentence Structure Practice
+
+22. [Themed Sentence Tables &mdash; Hiragana Section (HTML)](jp_hiragana/sentence_structure_themed_tables.html)
+23. [Themed Sentence Tables &mdash; Katakana Section (HTML)](jp_katakana/sentence_structure_themed_tables.html)
+24. [Sentence Structure Writing Practice &mdash; Hiragana Section (PDF)](jp_hiragana/sentence_structure_writing_practice.pdf)
+25. [Sentence Structure Writing Practice &mdash; Katakana Section (PDF)](jp_katakana/sentence_structure_writing_practice.pdf)
 
 ### Flash Cards
 
@@ -57,8 +66,15 @@ The foundational Japanese phonetic script. This set covers all 46 core hiragana 
 - **Writing Practice Workbook** &mdash; [`01-write-hiragana.pdf`](jp_hiragana/01-write-hiragana.pdf) &mdash; Simple grid practice (2 characters per page, blue headers)
 - **Full Worksheet Set** &mdash; [`japanese-worksheet-hiragana-mensura-media-pdfa.pdf`](jp_hiragana/japanese-worksheet-hiragana-mensura-media-pdfa.pdf) &mdash; Cover page, table of contents, and 52 pages of writing practice
 - **Reference Chart** &mdash; [`reference_chart_hiragana.pdf`](jp_hiragana/reference_chart_hiragana.pdf) &mdash; 2-page quick-reference with all gojuon, dakuon, han-dakuon, and yoon characters, common words by row, sample sentences, and a particles cheat sheet
+- **Simple Chart** &mdash; [`simple_chart_hiragana.pdf`](jp_hiragana/simple_chart_hiragana.pdf) &mdash; Single-page black and white quick-reference covering all character groups with romaji. Designed for printing without colour ink
 - **Flash Cards** &mdash; [`flashcard_hiragana.pdf`](jp_hiragana/flashcard_hiragana.pdf) &mdash; 23-page printable double-sided flash cards (character on front, romaji with pronunciation guide on back). Print, cut, and learn
 - **Wall Prints** &mdash; [`wall_prints_hiragana.pdf`](jp_hiragana/wall_prints_hiragana.pdf) &mdash; 10-page large-format wall chart with all characters displayed in bold, organized by row (gojuon, dakuon, yoon)
+- **Themed Sentence Tables** &mdash; [`sentence_structure_themed_tables.html`](jp_hiragana/sentence_structure_themed_tables.html) &mdash; 16 themed sentence structure exercise tables. English in Japanese word order + romaji, dark background, browser-ready
+- **Writing Practice with Sentence Tables** &mdash; [`sentence_structure_writing_practice.pdf`](jp_hiragana/sentence_structure_writing_practice.pdf) &mdash; Landscape workbook with 16 themed sentence tables, character reference strips, and blank writing lines
+
+| Simple Chart | Themed Tables | Sentence Writing Practice |
+|:---:|:---:|:---:|
+| <img src="images/cover_simple_chart_hiragana.png" width="150"> | <img src="images/cover_sentence_structure_themed_tables.png" width="150"> | <img src="images/cover_sentence_structure_writing.png" width="150"> |
 
 > Ideal for beginners starting their Japanese writing journey.
 
@@ -76,8 +92,15 @@ The phonetic script used for foreign loanwords and modern Japanese text. Same st
 - **Writing Practice Workbook** &mdash; [`02-write-katakana.pdf`](jp_katakana/02-write-katakana.pdf) &mdash; Simple grid practice (2 characters per page, tan headers)
 - **Full Worksheet Set** &mdash; [`japanese-worksheet-katakana-mensura-media-pdfa.pdf`](jp_katakana/japanese-worksheet-katakana-mensura-media-pdfa.pdf) &mdash; Cover page, table of contents, and 52 pages of writing practice
 - **Reference Chart** &mdash; [`reference_chart_katakana.pdf`](jp_katakana/reference_chart_katakana.pdf) &mdash; 2-page quick-reference with all gojuon, dakuon, han-dakuon, and yoon characters, common loanwords by row, sample sentences, and a particles cheat sheet
+- **Simple Chart** &mdash; [`simple_chart_katakana.pdf`](jp_katakana/simple_chart_katakana.pdf) &mdash; Single-page black and white quick-reference covering all character groups with romaji. Designed for printing without colour ink
 - **Flash Cards** &mdash; [`flashcard_katakana.pdf`](jp_katakana/flashcard_katakana.pdf) &mdash; 23-page printable double-sided flash cards (character on front, romaji with pronunciation guide on back). Print, cut, and learn
 - **Wall Prints** &mdash; [`wall_prints_katakana.pdf`](jp_katakana/wall_prints_katakana.pdf) &mdash; 10-page large-format wall chart with all characters displayed in bold, organized by row (gojuon, dakuon, yoon)
+- **Themed Sentence Tables** &mdash; [`sentence_structure_themed_tables.html`](jp_katakana/sentence_structure_themed_tables.html) &mdash; 16 themed sentence structure exercise tables. English in Japanese word order + romaji, dark background, browser-ready
+- **Writing Practice with Sentence Tables** &mdash; [`sentence_structure_writing_practice.pdf`](jp_katakana/sentence_structure_writing_practice.pdf) &mdash; Landscape workbook with 16 themed sentence tables, character reference strips, and blank writing lines
+
+| Simple Chart | Themed Tables | Sentence Writing Practice |
+|:---:|:---:|:---:|
+| <img src="images/cover_simple_chart_katakana.png" width="150"> | <img src="images/cover_sentence_structure_themed_tables.png" width="150"> | <img src="images/cover_sentence_structure_writing.png" width="150"> |
 
 > Essential for reading foreign loanwords and modern Japanese text.
 
@@ -219,14 +242,20 @@ japanese/
 │   ├── 01-write-hiragana.pdf
 │   ├── japanese-worksheet-hiragana-mensura-media-pdfa.pdf
 │   ├── reference_chart_hiragana.pdf
+│   ├── simple_chart_hiragana.pdf
 │   ├── flashcard_hiragana.pdf
-│   └── wall_prints_hiragana.pdf
+│   ├── wall_prints_hiragana.pdf
+│   ├── sentence_structure_themed_tables.html
+│   └── sentence_structure_writing_practice.pdf
 ├── jp_katakana/                    # Katakana writing practice & study tools
 │   ├── 02-write-katakana.pdf
 │   ├── japanese-worksheet-katakana-mensura-media-pdfa.pdf
 │   ├── reference_chart_katakana.pdf
+│   ├── simple_chart_katakana.pdf
 │   ├── flashcard_katakana.pdf
-│   └── wall_prints_katakana.pdf
+│   ├── wall_prints_katakana.pdf
+│   ├── sentence_structure_themed_tables.html
+│   └── sentence_structure_writing_practice.pdf
 ├── jp_kanji/                       # Kanji writing practice & reference charts
 │   ├── 03-write-kanji.pdf
 │   ├── japanese-worksheet-kanji-n5-mensura-media-pdfa.pdf

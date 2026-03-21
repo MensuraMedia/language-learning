@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Japanese Sentence Structure — Themed Tables</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:    #111214;
+    --bg2:   #1a1c1f;
+    --bg3:   #222428;
+    --bg4:   #2a2d32;
+    --text:  #e2e4e8;
+    --muted: #7a7f8a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    padding: 48px 40px;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .page-desc {
+    font-size: 0.85em;
+    font-weight: 300;
+    color: #6a717e;
+    line-height: 1.7;
+    max-width: 780px;
+    margin-bottom: 36px;
+  }
+
+  .particle-guide {
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .particle-row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .ptag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82em;
+    color: var(--text);
+    background: var(--bg4);
+    padding: 3px 10px;
+    border-radius: 3px;
+    min-width: 72px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  .pdesc {
+    font-size: 0.82em;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .pdesc strong {
+    color: #b0b8c8;
+    font-weight: 600;
+  }
+  .pdesc em {
+    color: var(--text);
+    font-style: italic;
+  }
+
+  .section {
+    margin-bottom: 64px;
+  }
+
+  .theme-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  tr.banner td {
+    height: 36px;
+    border: none;
+  }
+
+  tr.header-row th {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.78em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    text-align: center;
+    background: var(--bg4);
+    color: var(--text);
+    border: none;
+  }
+  tr.header-row th.ptcl {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--muted);
+    font-size: 0.72em;
+  }
+
+  tr.en td {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82em;
+    font-weight: 300;
+    color: #9aa0ad;
+    background: var(--bg2);
+    padding: 6px 14px;
+    text-align: center;
+    border: none;
+  }
+
+  tr.ro td {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.88em;
+    color: var(--text);
+    background: var(--bg2);
+    padding: 7px 14px;
+    text-align: center;
+    border: none;
+  }
+
+
+  tr.story-divider td {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: #ff8fa3;
+    background: var(--bg2);
+    text-align: center;
+    padding: 6px 14px;
+    border: none;
+  }
+
+  tr.hgap td {
+    background: #111214;
+    height: 10px;
+    border: none;
+  }
+
+  tr.gap td {
+    background: var(--bg);
+    height: 8px;
+    border: none;
+  }
+
+  /* theme accent colours */
+  .t1  .theme-label { color: #5b8dee; }
+  .t1  tr.banner td  { background: #1a2a4a; }
+
+  .t2  .theme-label { color: #e87d4a; }
+  .t2  tr.banner td  { background: #2a1f10; }
+
+  .t3  .theme-label { color: #58c99a; }
+  .t3  tr.banner td  { background: #102a1e; }
+
+  .t4  .theme-label { color: #c97de8; }
+  .t4  tr.banner td  { background: #231529; }
+
+  .t5  .theme-label { color: #e8c44a; }
+  .t5  tr.banner td  { background: #292510; }
+
+  .t6  .theme-label { color: #e85b5b; }
+  .t6  tr.banner td  { background: #2a1010; }
+
+  .t7  .theme-label { color: #f087c3; }
+  .t7  tr.banner td  { background: #2a1020; }
+
+  .t8  .theme-label { color: #a3e85b; }
+  .t8  tr.banner td  { background: #182510; }
+
+  .t9  .theme-label { color: #ff8fa3; }
+  .t9  tr.banner td  { background: #2a1018; }
+
+  .t10 .theme-label { color: #ffb347; }
+  .t10 tr.banner td  { background: #2a1e0a; }
+
+  .t11 .theme-label { color: #5bcce8; }
+  .t11 tr.banner td  { background: #0f2030; }
+
+  .t12 .theme-label { color: #8899ee; }
+  .t12 tr.banner td  { background: #141828; }
+
+  .t13 .theme-label { color: #5be8c9; }
+  .t13 tr.banner td  { background: #0f2520; }
+
+  .t14 .theme-label { color: #ff7f6e; }
+  .t14 tr.banner td  { background: #2a130f; }
+
+  .t15 .theme-label { color: #d4b96e; }
+  .t15 tr.banner td  { background: #231c0a; }
+
+  .t16 .theme-label { color: #ff6b9d; }
+  .t16 tr.banner td  { background: #2a0f1a; }
+</style>
+</head>
+<body>
+
+<h1>Japanese Sentence Structure — Themed Tables</h1>
+
+<p class="page-desc">Each table shows English sentences written in Japanese word order — Topic first, Object second, Verb last. This is the opposite of English which puts the verb in the middle. Reading the English row trains your brain to expect the verb at the end, which is the single most important habit to build in Japanese.</p>
+
+<div class="particle-guide">
+  <div class="particle-row">
+    <span class="ptag">wa &nbsp;は</span>
+    <span class="pdesc">marks the <strong>topic</strong> — what the sentence is about &nbsp;·&nbsp; <em>Ken wa</em> = "as for Ken..."</span>
+  </div>
+  <div class="particle-row">
+    <span class="ptag">wo &nbsp;を</span>
+    <span class="pdesc">marks the <strong>object</strong> — the thing receiving the action &nbsp;·&nbsp; <em>gohan wo</em> = "rice [is what I eat]"</span>
+  </div>
+  <div class="particle-row">
+    <span class="ptag">ni &nbsp;に</span>
+    <span class="pdesc">marks a <strong>person receiving</strong> something, or a destination &nbsp;·&nbsp; <em>Yuki ni</em> = "to Yuki"</span>
+  </div>
+  <div class="particle-row">
+    <span class="ptag">de &nbsp;で</span>
+    <span class="pdesc">marks the <strong>location</strong> where an action happens &nbsp;·&nbsp; <em>kouen de</em> = "at the park"</span>
+  </div>
+  <div class="particle-row">
+    <span class="ptag">ka &nbsp;か</span>
+    <span class="pdesc">added to the <strong>end of a verb</strong> to make a question — no word order change needed &nbsp;·&nbsp; <em>tabemasu ka?</em> = "do you eat?"</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T1 · EATING & DRINKING · 5 col
+  Topic wa + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t1">
+  <span class="theme-label">Eating &amp; Drinking</span>
+  <table>
+    <tr class="banner"><td colspan="5"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>rice</td><td>—</td><td>eats</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>gohan</td><td>wo</td><td>tabemasu</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>coffee</td><td>—</td><td>makes</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>koohii</td><td>wo</td><td>tsukurimasu</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>tea</td><td>—</td><td>wants</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>ocha</td><td>wo</td><td>hoshigatte imasu</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>fruit</td><td>—</td><td>take</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>kudamono</td><td>wo</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>You</td><td>—</td><td>water</td><td>—</td><td>drink</td></tr>
+    <tr class="ro"><td>Anata</td><td>wa</td><td>mizu</td><td>wo</td><td>nomimasu</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>bread</td><td>—</td><td>gives</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>pan</td><td>wo</td><td>agemasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T2 · SHOPPING · 6 col
+  Time + Topic wa + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t2">
+  <span class="theme-label">Shopping</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Ken</td><td>—</td><td>a bag</td><td>—</td><td>buys</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Ken</td><td>wa</td><td>kaban</td><td>wo</td><td>kaimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>Yuki</td><td>—</td><td>clothing</td><td>—</td><td>wants</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Yuki</td><td>wa</td><td>fuku</td><td>wo</td><td>hoshigatte imasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>I</td><td>—</td><td>a wallet</td><td>—</td><td>bought</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Watashi</td><td>wa</td><td>saifu</td><td>wo</td><td>kaimashita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Tanaka</td><td>—</td><td>cash</td><td>—</td><td>takes</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Tanaka</td><td>wa</td><td>genkin</td><td>wo</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>I</td><td>—</td><td>a card</td><td>—</td><td>use</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Watashi</td><td>wa</td><td>kaado</td><td>wo</td><td>tsukaimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>Yuki</td><td>—</td><td>a notebook</td><td>—</td><td>gave</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Yuki</td><td>wa</td><td>nooto</td><td>wo</td><td>agemashita</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T3 · SPORTS & FITNESS · 7 col
+  Time + Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t3">
+  <span class="theme-label">Sports &amp; Fitness</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>Ken</td><td>—</td><td>at the park</td><td>—</td><td>laps</td><td>runs</td></tr>
+    <tr class="ro"><td>Asa</td><td>Ken</td><td>wa</td><td>kouen</td><td>de</td><td>raappu</td><td>hashirimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Tanaka</td><td>—</td><td>at the gym</td><td>—</td><td>work</td><td>does</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Tanaka</td><td>wa</td><td>jimu</td><td>de</td><td>toreeningu</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>Ken</td><td>—</td><td>at the pool</td><td>—</td><td>laps</td><td>swims</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Ken</td><td>wa</td><td>puuru</td><td>de</td><td>raappu</td><td>oyogimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At noon</td><td>I</td><td>—</td><td>in the park</td><td>—</td><td>a walk</td><td>take</td></tr>
+    <tr class="ro"><td>Hiru</td><td>Watashi</td><td>wa</td><td>kouen</td><td>de</td><td>sanpo</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At night</td><td>Tanaka</td><td>—</td><td>at home</td><td>—</td><td>a nap</td><td>takes</td></tr>
+    <tr class="ro"><td>Yoru</td><td>Tanaka</td><td>wa</td><td>ie</td><td>de</td><td>hirune</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>You</td><td>—</td><td>outside</td><td>—</td><td>a walk</td><td>go for</td></tr>
+    <tr class="ro"><td>Asa</td><td>Anata</td><td>wa</td><td>soto</td><td>de</td><td>sanpo</td><td>arukimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T4 · PHONES & COMPUTERS · 6 col
+  Topic wa + Object wo + Person ni + Verb
+══════════════════════════════════════ -->
+<div class="section t4">
+  <span class="theme-label">Phones &amp; Computers</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Person &nbsp; ni</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>the phone</td><td>—</td><td>to Yuki</td><td>gives</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>sumaato</td><td>wo</td><td>Yuki ni</td><td>agemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>the computer</td><td>—</td><td>to Tanaka</td><td>lend</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>pasokon</td><td>wo</td><td>Tanaka ni</td><td>kashimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>headphones</td><td>—</td><td>to Ken</td><td>brings</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>iyahon</td><td>wo</td><td>Ken ni</td><td>mottekimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>You</td><td>—</td><td>the phone</td><td>—</td><td>to me</td><td>show</td></tr>
+    <tr class="ro"><td>Anata</td><td>wa</td><td>sumaato</td><td>wo</td><td>Watashi ni</td><td>misemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>the computer</td><td>—</td><td>to Tanaka</td><td>takes</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>pasokon</td><td>wo</td><td>Tanaka ni</td><td>mottekimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>headphones</td><td>—</td><td>from Ken</td><td>wants</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>iyahon</td><td>wo</td><td>Ken ni</td><td>hoshigatte imasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T5 · ANIMALS · 7 col
+  Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t5">
+  <span class="theme-label">Animals</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>The cat</td><td>—</td><td>in the room</td><td>—</td><td>water</td><td>—</td><td>drinks</td></tr>
+    <tr class="ro"><td>Neko</td><td>wa</td><td>heya</td><td>de</td><td>mizu</td><td>wo</td><td>nomimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>The dog</td><td>—</td><td>in the garden</td><td>—</td><td>a fish</td><td>—</td><td>wants</td></tr>
+    <tr class="ro"><td>Inu</td><td>wa</td><td>niwa</td><td>de</td><td>sakana</td><td>wo</td><td>hoshigatte imasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>at the river</td><td>—</td><td>fish</td><td>—</td><td>catches</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>kawa</td><td>de</td><td>sakana</td><td>wo</td><td>tsuri shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>The dog</td><td>—</td><td>at the door</td><td>—</td><td>a ball</td><td>—</td><td>carries</td></tr>
+    <tr class="ro"><td>Inu</td><td>wa</td><td>doa</td><td>de</td><td>booru</td><td>wo</td><td>hakobimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>The cat</td><td>—</td><td>on the bed</td><td>—</td><td>nap</td><td>—</td><td>takes</td></tr>
+    <tr class="ro"><td>Neko</td><td>wa</td><td>beddo</td><td>de</td><td>hirune</td><td>wo</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>at the river</td><td>—</td><td>fish</td><td>—</td><td>fishes</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>kawa</td><td>de</td><td>sakana</td><td>wo</td><td>tsuri shimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T6 · QUESTIONS · 5 col
+  Who/What wa + Object wo + Verb + ka?
+══════════════════════════════════════ -->
+<div class="section t6">
+  <span class="theme-label">Asking Questions</span>
+  <table>
+    <tr class="banner"><td colspan="5"></td></tr>
+    <tr class="header-row"><th>Who / What</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Verb + ka?</th></tr>
+    <tr class="hgap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Who</td><td>—</td><td>the bag</td><td>—</td><td>carries?</td></tr>
+    <tr class="ro"><td>Dare</td><td>wa</td><td>kaban</td><td>wo</td><td>mochimasu ka?</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>what</td><td>—</td><td>wants?</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>nani</td><td>wo</td><td>hoshigatte imasu ka?</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Who</td><td>—</td><td>the phone</td><td>—</td><td>takes?</td></tr>
+    <tr class="ro"><td>Dare</td><td>wa</td><td>sumaato</td><td>wo</td><td>torimasu ka?</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>what</td><td>—</td><td>makes?</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>nani</td><td>wo</td><td>tsukurimasu ka?</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Who</td><td>—</td><td>the key</td><td>—</td><td>gives?</td></tr>
+    <tr class="ro"><td>Dare</td><td>wa</td><td>kagi</td><td>wo</td><td>agemasu ka?</td></tr>
+    <tr class="gap"><td colspan="5"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>what</td><td>—</td><td>does?</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>nani</td><td>wo</td><td>shimasu ka?</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T7 · FASHION · 6 col
+  Topic wa + Object wo + Person ni + Verb
+══════════════════════════════════════ -->
+<div class="section t7">
+  <span class="theme-label">Fashion</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Person &nbsp; ni</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>a dress</td><td>—</td><td>to Hana</td><td>gives</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>doresu</td><td>wo</td><td>Hana ni</td><td>agemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>a coat</td><td>—</td><td>from Yuki</td><td>takes</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>kooto</td><td>wo</td><td>Yuki ni</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>a jacket</td><td>—</td><td>to Tanaka</td><td>shows</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>jaketto</td><td>wo</td><td>Tanaka ni</td><td>misemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>a hat</td><td>—</td><td>to Hana</td><td>bring</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>boushi</td><td>wo</td><td>Hana ni</td><td>mottekimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>shoes</td><td>—</td><td>from Ken</td><td>wants</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>kutsu</td><td>wo</td><td>Ken ni</td><td>hoshigatte imasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>You</td><td>—</td><td>a scarf</td><td>—</td><td>to me</td><td>lend</td></tr>
+    <tr class="ro"><td>Anata</td><td>wa</td><td>sukafu</td><td>wo</td><td>Watashi ni</td><td>kashimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T8 · TENNIS · 7 col
+  Time + Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t8">
+  <span class="theme-label">Tennis</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>Ken</td><td>—</td><td>at the court</td><td>—</td><td>a ball</td><td>hits</td></tr>
+    <tr class="ro"><td>Asa</td><td>Ken</td><td>wa</td><td>kooto</td><td>de</td><td>booru</td><td>uchimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Tanaka</td><td>—</td><td>at the court</td><td>—</td><td>a racket</td><td>carries</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Tanaka</td><td>wa</td><td>kooto</td><td>de</td><td>raketto</td><td>mochimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>I</td><td>—</td><td>at the court</td><td>—</td><td>practice</td><td>do</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Watashi</td><td>wa</td><td>kooto</td><td>de</td><td>renshuu</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At noon</td><td>Hana</td><td>—</td><td>at the park</td><td>—</td><td>a lap</td><td>runs</td></tr>
+    <tr class="ro"><td>Hiru</td><td>Hana</td><td>wa</td><td>kouen</td><td>de</td><td>raappu</td><td>hashirimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>Ken</td><td>—</td><td>at the court</td><td>—</td><td>a match</td><td>won</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Ken</td><td>wa</td><td>kooto</td><td>de</td><td>shiai</td><td>kachimashita</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At night</td><td>Tanaka</td><td>—</td><td>at home</td><td>—</td><td>a nap</td><td>takes</td></tr>
+    <tr class="ro"><td>Yoru</td><td>Tanaka</td><td>wa</td><td>ie</td><td>de</td><td>hirune</td><td>shimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T9 · ROMANCE / ATTRACTION · 6 col
+  Topic wa + Object wo + Person ni + Verb
+══════════════════════════════════════ -->
+<div class="section t9">
+  <span class="theme-label">Romance &amp; Attraction</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Person &nbsp; ni</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Hana</td><td>—</td><td>across the room</td><td>stares at</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>Hana</td><td>wo</td><td>heya no mukou de</td><td>mitsumemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>Ken</td><td>—</td><td>near her seat</td><td>notices</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>Ken</td><td>wo</td><td>seki no chikaku de</td><td>kizukimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>a note</td><td>—</td><td>to Hana</td><td>pass</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>memo</td><td>wo</td><td>Hana ni</td><td>watashimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Hana's number</td><td>—</td><td>from Yuki</td><td>gets</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>Hana no bangou</td><td>wo</td><td>Yuki ni</td><td>moraimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>Ken's message</td><td>—</td><td>twice</td><td>reads</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>Ken no meseji</td><td>wo</td><td>nido</td><td>yomimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>the seat</td><td>—</td><td>next to Hana</td><td>take</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>seki</td><td>wo</td><td>Hana no tonari ni</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Hana</td><td>—</td><td>after class</td><td>waits for</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>Hana</td><td>wo</td><td>jugyou no ato ni</td><td>machimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>Ken</td><td>—</td><td>on purpose</td><td>ignores</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>Ken</td><td>wo</td><td>waza to</td><td>mushishimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>a compliment</td><td>—</td><td>to Hana</td><td>give</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>homekotoba</td><td>wo</td><td>Hana ni</td><td>iimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>Ken's jacket</td><td>—</td><td>at the door</td><td>borrows</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>Ken no jaketto</td><td>wo</td><td>doa de</td><td>karimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>a rumor about Hana</td><td>—</td><td>from Yuki</td><td>hear</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>Hana no uwasa</td><td>wo</td><td>Yuki ni</td><td>kikimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Hana</td><td>—</td><td>to the rooftop</td><td>follows</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>Hana</td><td>wo</td><td>okujou ni</td><td>tsuitekimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>an unexpected reply</td><td>—</td><td>to Ken</td><td>sends</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>igai na henji</td><td>wo</td><td>Ken ni</td><td>okurimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>Hana's smile</td><td>—</td><td>by accident</td><td>notice</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>Hana no egao</td><td>wo</td><td>guuzen ni</td><td>kizukimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="story-divider"><td colspan="6">— Ken &amp; Hana —</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>Ken</td><td>—</td><td>from two rows back</td><td>watches</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>Ken</td><td>wo</td><td>futatsu ushiro kara</td><td>mimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>the movie plan</td><td>—</td><td>to Hana</td><td>mentions</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>eiga no hanashi</td><td>wo</td><td>Hana ni</td><td>iimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Sora</td><td>—</td><td>Ken's desk</td><td>—</td><td>three times</td><td>passes</td></tr>
+    <tr class="ro"><td>Sora</td><td>wa</td><td>Ken no tsukue</td><td>wo</td><td>san-do</td><td>toorimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>it</td><td>—</td><td>near Ken</td><td>says aloud</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>sore</td><td>wo</td><td>Ken no chikaku de</td><td>iimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>his page</td><td>—</td><td>in the book</td><td>loses</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>peji</td><td>wo</td><td>hon no naka de</td><td>nakushimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>The teacher</td><td>—</td><td>Ken and Hana</td><td>—</td><td>at the same bench</td><td>pairs</td></tr>
+    <tr class="ro"><td>Sensei</td><td>wa</td><td>Ken to Hana</td><td>wo</td><td>onaji bench ni</td><td>kumiawasemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>a pencil</td><td>—</td><td>across Ken's arm</td><td>reaches for</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>enpitsu</td><td>wo</td><td>Ken no ude no ue kara</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>her arm</td><td>—</td><td>against his</td><td>presses down</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>ude</td><td>wo</td><td>Ken no ude ni</td><td>oshitsukemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>a slow smile</td><td>—</td><td>toward Ken</td><td>turns</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>egao</td><td>wo</td><td>Ken ni</td><td>mukemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Hana</td><td>—</td><td>like the first time</td><td>sees</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>Hana</td><td>wo</td><td>hajimete no you ni</td><td>mimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>the film</td><td>—</td><td>to Hana</td><td>asks about</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>eiga</td><td>wo</td><td>Hana ni</td><td>kikimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>the same taste</td><td>—</td><td>to Ken</td><td>tells</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>onaji shumi</td><td>wo</td><td>Ken ni</td><td>iimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>Saturday</td><td>—</td><td>to Hana</td><td>asks about</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>doyoubi</td><td>wo</td><td>Hana ni</td><td>kikimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>her answer</td><td>—</td><td>after a pause</td><td>gives</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>henji</td><td>wo</td><td>ma wo oite kara</td><td>iimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Sora</td><td>—</td><td>everything</td><td>—</td><td>from across the room</td><td>sees</td></tr>
+    <tr class="ro"><td>Sora</td><td>wa</td><td>subete</td><td>wo</td><td>heya no mukou kara</td><td>mimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T10 · CLASSMATES · 6 col
+  Topic wa + Object wo + Person ni + Verb
+══════════════════════════════════════ -->
+<div class="section t10">
+  <span class="theme-label">Classmates</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Person &nbsp; ni</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>a notebook</td><td>—</td><td>to Hana</td><td>gives</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>nooto</td><td>wo</td><td>Hana ni</td><td>agemasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>a pen</td><td>—</td><td>from Tanaka</td><td>takes</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>pen</td><td>wo</td><td>Tanaka ni</td><td>torimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>a question</td><td>—</td><td>to the teacher</td><td>asks</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>shitsumon</td><td>wo</td><td>sensei ni</td><td>shimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>a book</td><td>—</td><td>to Yuki</td><td>lend</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>hon</td><td>wo</td><td>Yuki ni</td><td>kashimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>a message</td><td>—</td><td>to Ken</td><td>sends</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>meseji</td><td>wo</td><td>Ken ni</td><td>okurimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>You</td><td>—</td><td>the homework</td><td>—</td><td>to me</td><td>show</td></tr>
+    <tr class="ro"><td>Anata</td><td>wa</td><td>shukudai</td><td>wo</td><td>Watashi ni</td><td>misemasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T11 · STUDYING · 6 col
+  Time + Topic wa + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t11">
+  <span class="theme-label">Studying</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>Hana</td><td>—</td><td>Japanese</td><td>—</td><td>learns</td></tr>
+    <tr class="ro"><td>Asa</td><td>Hana</td><td>wa</td><td>nihongo</td><td>wo</td><td>naraimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Ken</td><td>—</td><td>a book</td><td>—</td><td>reads</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Ken</td><td>wa</td><td>hon</td><td>wo</td><td>yomimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>I</td><td>—</td><td>homework</td><td>—</td><td>did</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Watashi</td><td>wa</td><td>shukudai</td><td>wo</td><td>shimashita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>Tanaka</td><td>—</td><td>kanji</td><td>—</td><td>learns</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Tanaka</td><td>wa</td><td>kanji</td><td>wo</td><td>naraimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>At noon</td><td>Yuki</td><td>—</td><td>notes</td><td>—</td><td>makes</td></tr>
+    <tr class="ro"><td>Hiru</td><td>Yuki</td><td>wa</td><td>nooto</td><td>wo</td><td>tsukurimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>At night</td><td>I</td><td>—</td><td>grammar</td><td>—</td><td>study</td></tr>
+    <tr class="ro"><td>Yoru</td><td>Watashi</td><td>wa</td><td>bunpou</td><td>wo</td><td>benkyou shimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T12 · DRIVING · 7 col
+  Time + Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t12">
+  <span class="theme-label">Driving</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>Ken</td><td>—</td><td>on the road</td><td>—</td><td>the car</td><td>drives</td></tr>
+    <tr class="ro"><td>Asa</td><td>Ken</td><td>wa</td><td>douro</td><td>de</td><td>kuruma</td><td>unten shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Tanaka</td><td>—</td><td>at the station</td><td>—</td><td>the taxi</td><td>takes</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Tanaka</td><td>wa</td><td>eki</td><td>de</td><td>takushii</td><td>norimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>I</td><td>—</td><td>at the station</td><td>—</td><td>the train</td><td>ride</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Watashi</td><td>wa</td><td>eki</td><td>de</td><td>densha</td><td>norimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>Hana</td><td>—</td><td>at the airport</td><td>—</td><td>a plane</td><td>took</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Hana</td><td>wa</td><td>kuukou</td><td>de</td><td>hikouki</td><td>norimashita</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At noon</td><td>You</td><td>—</td><td>at the bus stop</td><td>—</td><td>the bus</td><td>wait for</td></tr>
+    <tr class="ro"><td>Hiru</td><td>Anata</td><td>wa</td><td>basutei</td><td>de</td><td>basu</td><td>machimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At night</td><td>Ken</td><td>—</td><td>at home</td><td>—</td><td>the car</td><td>parks</td></tr>
+    <tr class="ro"><td>Yoru</td><td>Ken</td><td>wa</td><td>ie</td><td>de</td><td>kuruma</td><td>tomemasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T13 · CLEANING · 7 col
+  Time + Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t13">
+  <span class="theme-label">Cleaning</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>In the morning</td><td>Yuki</td><td>—</td><td>in the bathroom</td><td>—</td><td>the sink</td><td>cleans</td></tr>
+    <tr class="ro"><td>Asa</td><td>Yuki</td><td>wa</td><td>ofuro</td><td>de</td><td>nagashi</td><td>souji shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Ken</td><td>—</td><td>in the room</td><td>—</td><td>the floor</td><td>sweeps</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Ken</td><td>wa</td><td>heya</td><td>de</td><td>yuka</td><td>hakimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>I</td><td>—</td><td>in the bathroom</td><td>—</td><td>teeth</td><td>brush</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Watashi</td><td>wa</td><td>ofuro</td><td>de</td><td>ha</td><td>migakimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At noon</td><td>Hana</td><td>—</td><td>in the kitchen</td><td>—</td><td>dishes</td><td>washes</td></tr>
+    <tr class="ro"><td>Hiru</td><td>Hana</td><td>wa</td><td>daidokoro</td><td>de</td><td>sara</td><td>araimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>Tanaka</td><td>—</td><td>in the bathroom</td><td>—</td><td>shower</td><td>took</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Tanaka</td><td>wa</td><td>ofuro</td><td>de</td><td>shawaa</td><td>abimashita</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>At night</td><td>I</td><td>—</td><td>in the bathroom</td><td>—</td><td>soap</td><td>use</td></tr>
+    <tr class="ro"><td>Yoru</td><td>Watashi</td><td>wa</td><td>ofuro</td><td>de</td><td>sekken</td><td>tsukaimasu</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T14 · RELOCATING · 6 col
+  Time + Topic wa + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t14">
+  <span class="theme-label">Relocating</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Time</th><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Ken</td><td>—</td><td>boxes</td><td>—</td><td>carries</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Ken</td><td>wa</td><td>hako</td><td>wo</td><td>hakobimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>Yuki</td><td>—</td><td>the new room</td><td>—</td><td>goes to</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Yuki</td><td>wa</td><td>atarashii heya</td><td>ni</td><td>ikimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>I</td><td>—</td><td>a key</td><td>—</td><td>received</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Watashi</td><td>wa</td><td>kagi</td><td>wo</td><td>moraimashita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Today</td><td>Tanaka</td><td>—</td><td>a bed</td><td>—</td><td>makes</td></tr>
+    <tr class="ro"><td>Kyou</td><td>Tanaka</td><td>wa</td><td>beddo</td><td>wo</td><td>tsukurimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tomorrow</td><td>Hana</td><td>—</td><td>the house</td><td>—</td><td>leaves</td></tr>
+    <tr class="ro"><td>Ashita</td><td>Hana</td><td>wa</td><td>ie</td><td>wo</td><td>demasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yesterday</td><td>Ken</td><td>—</td><td>the new house</td><td>—</td><td>went to</td></tr>
+    <tr class="ro"><td>Kinou</td><td>Ken</td><td>wa</td><td>atarashii ie</td><td>ni</td><td>ikimashita</td></tr>
+  </table>
+</div>
+
+
+<!-- ══════════════════════════════════════
+  T15 · HOMES, ROOMS & FURNITURE · 7 col
+  Topic wa + Location de + Object wo + Verb
+══════════════════════════════════════ -->
+<div class="section t15">
+  <span class="theme-label">Homes, Rooms &amp; Furniture</span>
+  <table>
+    <tr class="banner"><td colspan="7"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Location</th><th class="ptcl">de</th><th>Object</th><th class="ptcl">wo</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>in the room</td><td>—</td><td>the window</td><td>—</td><td>opens</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>heya</td><td>de</td><td>mado</td><td>wo</td><td>akemasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>in the room</td><td>—</td><td>the door</td><td>—</td><td>closes</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>heya</td><td>de</td><td>doa</td><td>wo</td><td>shimemasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>in the bedroom</td><td>—</td><td>the bed</td><td>—</td><td>sleep in</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>shinshitsu</td><td>de</td><td>beddo</td><td>wo</td><td>tsukaimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Hana</td><td>—</td><td>in the bathroom</td><td>—</td><td>the toilet</td><td>—</td><td>cleans</td></tr>
+    <tr class="ro"><td>Hana</td><td>wa</td><td>toire</td><td>de</td><td>benki</td><td>wo</td><td>souji shimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>in the bedroom</td><td>—</td><td>the light</td><td>—</td><td>turns off</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>shinshitsu</td><td>de</td><td>denki</td><td>wo</td><td>keshimasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>in the bedroom</td><td>—</td><td>the light</td><td>—</td><td>turn off then sleep</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>shinshitsu</td><td>de</td><td>denki</td><td>wo</td><td>keshite nemasu</td></tr>
+    <tr class="gap"><td colspan="7"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>in the morning</td><td>—</td><td>bed</td><td>—</td><td>wakes from</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>asa</td><td>ni</td><td>beddo</td><td>kara</td><td>okimasu</td></tr>
+  </table>
+</div>
+
+<!-- ══════════════════════════════════════
+  T16 · RIVALRY, JEALOUSY & DISCOVERY · 6 col
+  Topic wa + Object wo + Person ni + Verb
+══════════════════════════════════════ -->
+<div class="section t16">
+  <span class="theme-label">Rivalry, Jealousy &amp; Discovery</span>
+  <table>
+    <tr class="banner"><td colspan="6"></td></tr>
+    <tr class="header-row"><th>Topic</th><th class="ptcl">wa</th><th>Object</th><th class="ptcl">wo</th><th>Person &nbsp; ni</th><th>Verb</th></tr>
+    <tr class="hgap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Tanaka</td><td>—</td><td>Hana</td><td>—</td><td>near Ken</td><td>watches</td></tr>
+    <tr class="ro"><td>Tanaka</td><td>wa</td><td>Hana</td><td>wo</td><td>Ken no soba de</td><td>mimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>You</td><td>—</td><td>me</td><td>—</td><td>for someone else</td><td>mistook</td></tr>
+    <tr class="ro"><td>Anata</td><td>wa</td><td>watashi</td><td>wo</td><td>hoka no hito to</td><td>machigaemashita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>that</td><td>—</td><td>to no one</td><td>did not do</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>sore</td><td>wo</td><td>dare ni mo</td><td>shimasen deshita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>I</td><td>—</td><td>my grade</td><td>—</td><td>without studying</td><td>got</td></tr>
+    <tr class="ro"><td>Watashi</td><td>wa</td><td>seiseki</td><td>wo</td><td>benkyou sezu ni</td><td>torimashita</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Ken</td><td>—</td><td>his shirt</td><td>—</td><td>before class</td><td>fixes</td></tr>
+    <tr class="ro"><td>Ken</td><td>wa</td><td>shatsu</td><td>wo</td><td>jugyou no mae ni</td><td>naoshimasu</td></tr>
+    <tr class="gap"><td colspan="6"></td></tr>
+
+    <tr class="en"><td>Yuki</td><td>—</td><td>me</td><td>—</td><td>in front of everyone</td><td>misunderstood</td></tr>
+    <tr class="ro"><td>Yuki</td><td>wa</td><td>watashi</td><td>wo</td><td>minna no mae de</td><td>wakarimasen deshita</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
