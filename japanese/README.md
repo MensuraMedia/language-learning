@@ -33,24 +33,22 @@ A collection of free Japanese language learning worksheets and writing practice 
 
 ### Sentence Structure Practice
 
-22. [Themed Sentence Tables &mdash; Hiragana Section (HTML)](jp_hiragana/sentence_structure_themed_tables.html)
-23. [Themed Sentence Tables &mdash; Katakana Section (HTML)](jp_katakana/sentence_structure_themed_tables.html)
-24. [Sentence Structure Writing Practice &mdash; Hiragana Section (PDF)](jp_hiragana/sentence_structure_writing_practice.pdf)
-25. [Sentence Structure Writing Practice &mdash; Katakana Section (PDF)](jp_katakana/sentence_structure_writing_practice.pdf)
+22. [Themed Sentence Tables (HTML)](jp_hiragana/sentence_structure_themed_tables.html)
+23. [Sentence Structure Writing Practice (PDF)](jp_hiragana/sentence_structure_writing_practice.pdf)
 
 ### Flash Cards
 
-20. [Hiragana Flash Cards](jp_hiragana/flashcard_hiragana.pdf)
-21. [Katakana Flash Cards](jp_katakana/flashcard_katakana.pdf)
-22. [Top 200 Kanji Flash Cards](jp_kanji/flashcard_kanji_200.pdf)
-23. [Top 500 Kanji Flash Cards](jp_kanji/flashcard_kanji_500.pdf)
-24. [Complete Kanji Flash Cards](jp_kanji/flashcard_kanji_all.pdf)
+24. [Hiragana Flash Cards](jp_hiragana/flashcard_hiragana.pdf)
+25. [Katakana Flash Cards](jp_katakana/flashcard_katakana.pdf)
+26. [Top 200 Kanji Flash Cards](jp_kanji/flashcard_kanji_200.pdf)
+27. [Top 500 Kanji Flash Cards](jp_kanji/flashcard_kanji_500.pdf)
+28. [Complete Kanji Flash Cards](jp_kanji/flashcard_kanji_all.pdf)
 
 ### Wall Prints
 
-25. [Hiragana Wall Prints](jp_hiragana/wall_prints_hiragana.pdf)
-26. [Katakana Wall Prints](jp_katakana/wall_prints_katakana.pdf)
-27. [Top 200 Kanji Wall Chart](jp_kanji/wall_prints_kanji_wall_200.pdf)
+29. [Hiragana Wall Prints](jp_hiragana/wall_prints_hiragana.pdf)
+30. [Katakana Wall Prints](jp_katakana/wall_prints_katakana.pdf)
+31. [Top 200 Kanji Wall Chart](jp_kanji/wall_prints_kanji_wall_200.pdf)
 
 ---
 
